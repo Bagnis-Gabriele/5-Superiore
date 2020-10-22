@@ -13,10 +13,7 @@ def cripta(Stringa, chiave,d1,d2):
     i = 0
     while i < len(Stringa):
         if controlloCarattere(Stringa[i],d1):
-            try:
-                    risultato = risultato+d2[d1[Stringa[i]]+d1[chiave[i]]]
-            except:
-                    risultato = risultato+d2[d1[Stringa[i]]+d1[chiave[i]]+26]
+            risultato = risultato+d2[abs((d1[Stringa[i]]+d1[chiave[i]])%26)]
         else:
             risultato = risultato + Stringa[i]
         i += 1
@@ -38,10 +35,7 @@ def decripta(Stringa, chiave,d1,d2):
     i = 0
     while i < len(Stringa):
         if controlloCarattere(Stringa[i],d1):
-            try:
-                    risultato = risultato+d2[d1[Stringa[i]]-d1[chiave[i]]]
-            except:
-                    risultato = risultato+d2[d1[Stringa[i]]-d1[chiave[i]]-26]
+            risultato = risultato+d2[abs((d1[Stringa[i]]-d1[chiave[i]])%26)]
         else:
             risultato = risultato + Stringa[i]
         i += 1

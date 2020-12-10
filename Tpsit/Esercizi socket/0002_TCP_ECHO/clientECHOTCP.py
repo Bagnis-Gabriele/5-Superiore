@@ -3,8 +3,9 @@ Client ECHO UDP
 """
 import socket
 
+
 ip_server = '127.0.0.1'
-porta_server = 6000
+porta_server = 2512
 
 #creazione del socket TCP IPv4
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 

@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt install realvnc-vnc-server realvnc-vnc-viewer
+
+sudo raspi-config (attivare VNC nelle impostazioni)
+
+vncserver

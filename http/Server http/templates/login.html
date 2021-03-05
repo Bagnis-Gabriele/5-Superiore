@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand"> </a>
+          <a class="navbar-brand"><h1>Bagnis Gabriele Login</h1></a>
+          <a class="navbar-brand"> </a>
+        </div>
+      </nav>
+      <!-- SPAZIO -->
+      <br/>
+      <br/>
+      <!-- LOGIN -->
+      <div class="row align-items-center">
+        <div class="col">
+        </div>
+        <div class="col">
+          <form action="" method="POST">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" name="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" name="password" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-12">
+              <input class="btn btn-primary" type="submit" value="login">
+            </div>
+          </form>
+
+          {% if error %}
+          <p class="error"><strong>Error:</strong> {{ error }}
+          {% endif %}
+
+        </div>
+        <div class="col">
+        </div>
+      </div>     
+    </body>
+</html>
